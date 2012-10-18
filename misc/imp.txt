@@ -1,0 +1,33 @@
+var examQuestions = new Questions();
+examQuestions.fetch({
+    success: function () {
+        var questionList = examQuestions.toJSON();
+        for (var key in questionList.questions) {
+                var x = questionList.questions[key].question;
+            }
+
+            for (var key2 in  questionList.questions[key].choices){
+            var a = questionList.questions[key].choices[key2].a;
+            var b = questionList.questions[key].choices[key2].b;
+            var c = questionList.questions[key].choices[key2].c;
+            var d = questionList.questions[key].choices[key2].d;
+
+            var ans = "<ul>";
+            ans = ans + "<li>" + a + "</li><li>" + b + "</li><li>" + c + "</li><li>" + d + "</li>";
+            ans = ans + "</ul>";
+        }
+
+        $('#questiondiv').append(x);
+        $('#answerDiv').append(ans);
+    }
+
+});
+
+
+  <!--sample template for result item-->
+    <script type="text/html" id="resultItemTemplate">
+        <div>
+            <div><h4><%= Question %></h4></div>
+            <div class="span4"><%= Answers %></div>
+        </div>
+    </script>

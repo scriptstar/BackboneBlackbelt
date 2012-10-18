@@ -1,0 +1,7 @@
+[
+{"Id": 1, "question": "Backbone.js is a ", 
+"choices": [{"a": "Framework", "b": "Library", "c": "Both Framework and Library", "d": "None of the above"}], "type": "single", "info": "Please select one answer from the below"},
+
+{"Id": 2, "question": "Does Backbone.js depends on any other libraries? ",
+"choices": [{"a": "jQuery & backbone", "b": "Just jQuery", "c": "Just underscore", "d": "It doesn't depend on any other library"}], "type": "single", "info": "Please select one answer from the below"}
+]
